@@ -17,7 +17,23 @@
 
   <title>Title page</title>  
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+<link href="./main.3f6952e4.css" rel="stylesheet">
+<style>
+  .homepage-li{
+    color: black;
+  }
+  #myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .text-content {
+    margin-top: 10%;
+  }
+</style>
+</head>
 
 <body class="minimal">
 <div id="site-border-left"></div>
@@ -50,17 +66,22 @@
   </nav>
 </header>
 <!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/space.jpg')">
+  <div>
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/vids/PortfolioVid.mp4" type="video/mp4">
+    </video>
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <div class="hero-full-wrapper">
             <div class="text-content">
-              <h1>Hello,<br>
+              <h1>
                 <span id="typed-strings">
-                  <span>I'm James Dean</span>
-                  <span>French Designer</span>
-                  <span>Working as a Freelance</span>
+                  <span>What's up,<br>I'm Leon</span>
+                  <span>I... <br> am a student</span>
+                  <span>I... <br> do some Art</span>
+                  <span>I... <br> learn game-developement</span>
+                  <span>I... <br> design websites sometimes</span>
                 </span>
                 <span id="typed"></span>
               </h1>
