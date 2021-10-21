@@ -15,7 +15,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Home</title>  
+  <link rel = "icon" href = "assets/images/my-stuff/bonsaiboiLogo.png" type = "image/x-icon">
 
 <link href="./main.3f6952e4.css" rel="stylesheet">
 <style>
@@ -31,6 +32,31 @@
   }
   .text-content {
     margin-top: 10%;
+  }
+  @media (min-aspect-ratio: 16/9) {
+    #myVideo {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    #myVideo {
+      width: auto;
+      height: 100%;
+    }
+  }
+  @media (max-width: 1000px) {
+    #myVideo {
+      display: none;
+    }
+    body {
+      background: linear-gradient(#e66465, #9198e5);
+    }
+  }
+  @media (max-width: 600px) {
+    #heading {
+      font-size: 60px;
+    }
   }
 </style>
 </head>
@@ -51,13 +77,20 @@
           <span class="icon-bar"></span>
         </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
+      <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav ">
           <li><a href="./index.html" title="">01 : Home</a></li>
           <li><a href="./works.html" title="">02 : Works</a></li>
           <li><a href="./about.html" title="">03 : About me</a></li>
           <li><a href="./contact.html" title="">04 : Contact</a></li>
-          <li><a href="./components.html" title="">05 : Components</a></li>
+          <!-- <li><a href="./components.html" title="">05 : Components</a></li> -->
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+          <li><a href="./index.html" title="">001</a></li>
+          <li><a href="./works.html" title="">002</a></li>
+          <li><a href="./about.html" title="">003</a></li>
+          <li><a href="./contact.html" title="">004</a></li>
         </ul>
 
 
@@ -75,12 +108,12 @@
         <div class="col-xs-12">
           <div class="hero-full-wrapper">
             <div class="text-content">
-              <h1>
+              <h1 id="heading">
                 <span id="typed-strings">
                   <span>What's up,<br>I'm Leon</span>
                   <span>I... <br> am a student</span>
                   <span>I... <br> do some Art</span>
-                  <span>I... <br> learn game-developement</span>
+                  <span>I... <br> learn game-development</span>
                   <span>I... <br> design websites sometimes</span>
                 </span>
                 <span id="typed"></span>

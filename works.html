@@ -16,6 +16,29 @@
   <link href="./assets/favicon.ico" rel="icon">
 
   <title>Works</title>  
+  <link rel = "icon" href = "assets/images/my-stuff/bonsaiboiLogo.png" type = "image/x-icon">
+
+  <style>
+    #rowElement {
+      width: 50%;
+    }
+    #rowElement2 {
+      width: 50%;
+    }
+    @media (max-width: 1000px) {
+      #rowElement {
+        width: 100%;
+      }
+      #rowElement2 {
+        display: none;
+      }
+    }
+    @media (max-width: 770px) {
+      #hiddenOnMobile {
+        display: none;
+      }
+    }
+  </style>
 
 <link href="./main.3f6952e4.css" rel="stylesheet"></head>
 
@@ -41,7 +64,14 @@
           <li><a href="./works.html" title="">02 : Works</a></li>
           <li><a href="./about.html" title="">03 : About me</a></li>
           <li><a href="./contact.html" title="">04 : Contact</a></li>
-          <li><a href="./components.html" title="">05 : Components</a></li>
+          <!-- <li><a href="./components.html" title="">05 : Components</a></li> -->
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+          <li><a href="./index.html" title="">001</a></li>
+          <li><a href="./works.html" title="">002</a></li>
+          <li><a href="./about.html" title="">003</a></li>
+          <li><a href="./contact.html" title="">004</a></li>
         </ul>
 
 
@@ -50,7 +80,7 @@
   </nav>
 </header>
 
-<div class="section-container">
+<div class="section-container" id="game-dev">
   <div class="container">
     <div class="row">
       
@@ -68,37 +98,26 @@
         <div class="carousel-inner">
             <div class="item active">
                 <div class="row">
-                    <div class="col-sm-4">
-                      <a href="./work.html" title="" class="black-image-project-hover">
+                    <div class="col-sm-4" id="rowElement">
+                      <a href="./chrystalOverload.html" title="" class="black-image-project-hover">
                         <img src="./assets/images/my-stuff/Chrystal.JPG" alt="" class="img-responsive">
                       </a>
                       <div class="card-container card-container-lg">
                         <h4>001</h4>
-                        <h3>Chrystal Overload</h3>
+                        <h3>ChrystalOverload</h3>
                         <p>My first try at game-dev, a small 2D-Topdown Roguelike</p>
-                        <a href="./work.html" title="" class="btn btn-default">Check it out</a>
+                        <a href="./chrystalOverload.html" title="" class="btn btn-default">Check it out</a>
                       </div>
                     </div>
-                    <div class="col-sm-4">
-                      <a href="./work.html" title="" class="black-image-project-hover">
-                        <img src="./assets/images/work02-hover.jpg" alt="" class="img-responsive">
+                    <div class="col-sm-4" id="rowElement">
+                      <a href="./offTheWalls.html" title="" class="black-image-project-hover">
+                        <img src="./assets/images/my-stuff/offTheWalls.JPG" alt="" class="img-responsive">
                       </a>
                       <div class="card-container card-container-lg">
-                        <h4>002/006</h4>
-                        <h3>Nulla scelerisque</h3>
-                        <p>Proin pharetra metus id iaculis dignissim. In aliquet lorem ut ex ullamcorper.</p>
-                        <a href="./work.html" title="" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <a href="./work.html" title="" class="black-image-project-hover">
-                        <img src="./assets/images/work03-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>003/006</h4>
-                        <h3>Vivamus vestibulum</h3>
-                        <p>Fusce sed hendrerit augue, a rhoncus velit. In non lorem mattis, tempor sem sit amet.</p>
-                        <a href="./work.html" title="" class="btn btn-default">Discover</a>
+                        <h4>002</h4>
+                        <h3>Off the Walls</h3>
+                        <p>A small 2-Player Arcade-Game, created during a GameJam</p>
+                        <a href="./offTheWalls.html" title="" class="btn btn-default">Check it out</a>
                       </div>
                     </div>
                     
@@ -106,45 +125,59 @@
                 <!--/row-->
             </div>
             <!--/item-->
-            <div class="item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <a href="./work.html" class="black-image-project-hover">
-                      <img src="./assets/images/work02-hover.jpg" alt="Image" class="img-responsive">
+                <div class="item">
+                <div class="row"> 
+                  <div class="col-sm-4" id="rowElement">
+                    <a href="./asteroidChase.html" title="" class="black-image-project-hover">
+                      <img src="./assets/images/my-stuff/Asteroids.JPG" alt="" class="img-responsive">
                     </a>
-                    <div class="card-container">
-                      <h4>004/006</h4>
-                      <h3>Nulla scelerisque</h3>
-                      <p>Proin pharetra metus id iaculis dignissim. In aliquet lorem ut ex ullamcorper.</p>
-                      <a href="./work.html" class="btn btn-default">Discover</a>
+                    <div class="card-container card-container-lg">
+                      <h4>003</h4>
+                      <h3>Asteroid Chase</h3>
+                      <p>My first project for mobile, currently still in development</p>
+                      <a href="./asteroidChase.html" title="" class="btn btn-default">Check it out</a>
                     </div>
                   </div>
-                   <div class="col-sm-4">
-                      <a href="./work.html" class="black-image-project-hover">
-                        <img src="./assets/images/work01-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>005/006</h4>
-                        <h3>Fringilla sit amet</h3>
-                        <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies.</p>
-                        <a href="./work.html" class="btn btn-default">Discover</a>
-                      </div>
+                  <div class="col-sm-4" id="rowElement2">
+                    <a href="./chrystalOverload.html" title="" class="black-image-project-hover">
+                      <img src="./assets/images/my-stuff/Chrystal.JPG" alt="" class="img-responsive">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>001</h4>
+                      <h3>ChrystalOverload</h3>
+                      <p>My first try at game-dev, a small 2D-Topdown Roguelike</p>
+                      <a href="./chrystalOverload.html" title="" class="btn btn-default">Check it out</a>
                     </div>
-                    
-                    <div class="col-sm-4">
-                      <a href="./work.html" class="black-image-project-hover">
-                        <img src="./assets/images/work03-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>006/006</h4>
-                        <h3>Vivamus vestibulum</h3>
-                        <p>Fusce sed hendrerit augue, a rhoncus velit. In non lorem mattis, tempor sem sit amet.</p>
-                        <a href="./work.html" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    
-                </div>
+                  </div>
+                </div> 
                 <!--/row-->
+              </div>
+              <!--/item-->
+                  <div class="item">
+                  <div class="row"> 
+                    <div class="col-sm-4" id="rowElement2">
+                      <a href="./offTheWalls.html" title="" class="black-image-project-hover">
+                        <img src="./assets/images/my-stuff/offTheWalls.JPG" alt="" class="img-responsive">
+                      </a>
+                      <div class="card-container card-container-lg">
+                        <h4>002</h4>
+                        <h3>Off the Walls</h3>
+                        <p>A small 2-Player Arcade-Game, created during a GameJam</p>
+                        <a href="./offTheWalls.html" title="" class="btn btn-default">Check it out</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-4" id="rowElement2">
+                      <a href="./asteroidChase.html" title="" class="black-image-project-hover">
+                        <img src="./assets/images/my-stuff/Asteroids.JPG" alt="" class="img-responsive">
+                      </a>
+                      <div class="card-container card-container-lg">
+                        <h4>003</h4>
+                        <h3>Asteroid Chase</h3>
+                        <p>My first project for mobile, currently still in development</p>
+                        <a href="./asteroidChase.html" title="" class="btn btn-default">Check it out</a>
+                      </div>
+                    </div>
+                  </div> 
             </div>
             
             <!--/item-->
@@ -160,7 +193,163 @@
     <!--/myCarousel-->
     </div>
 
+    <!--Carousel Deigns-->
+    
 
+
+
+    </div>
+  </div>
+</div>
+
+<div class="section-container" id="coding">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+        <div class="text-center">
+          <h3>My coding projects:</h3>      
+        </div>
+      </div>
+
+      <div class="col-md-12">
+     
+      <div id="myCarousel2" class="carousel slide projects-carousel">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                  <div class="col-sm-4" id="rowElement">
+                    <a href="./3dRenderer.html" title="" class="black-image-project-hover">
+                      <img src="./assets/images/my-stuff/3d-renderer.JPG" alt="" class="img-responsive">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>001</h4>
+                      <h3>3D-Renderer</h3>
+                      <p>A 3D-Renderer I wrote in Java, to display simple 3d-objects and rotate them with mouse-input or automatically.</p>
+                      <a href="./3dRenderer.html" title="" class="btn btn-default">Check it out</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-4" id="rowElement">
+                    <a href="https://leon-2802.github.io/Free-time_Projects/Tic-Tac-Toe/tic-tac.html" target="_blank" title="" class="black-image-project-hover">
+                      <img src="./assets/images/my-stuff/tic-tac-toe.JPG" alt="" class="img-responsive">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>002</h4>
+                      <h3>Tic Tac Toe</h3>
+                      <p>One of my first coding projects. A website which let's you play tic tac toe locally against another player.</p>
+                      <a href="https://leon-2802.github.io/Free-time_Projects/Tic-Tac-Toe/tic-tac.html" target="_blank" title="" class="btn btn-default">Check it out</a>
+                    </div>
+                  </div>                    
+                </div>
+                <!--/row-->
+            </div>
+            
+            <!--/item-->
+        </div>
+        <!--/carousel-inner--> 
+        <!-- <a class="left carousel-control" href="#myCarousel2" data-slide="prev">‹</a>
+
+        <a class="right carousel-control" href="#myCarousel2" data-slide="next">›</a> -->
+     </div>
+
+
+
+    <!--/myCarousel-->
+    </div>
+    
+
+    </div>
+  </div>
+</div>
+
+<div class="section-container" id="artworks">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+        <div class="text-center">
+          <h3>My digital artworks:</h3>      
+        </div>
+      </div>
+
+      <div class="col-md-12">
+     
+      <div id="myCarousel3" class="carousel slide projects-carousel">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                  <div class="col-sm-4" id="rowElement">
+                    <a href="assets/vids/jp_animation_safe-file.mp4" title="" class="black-image-project-hover">
+                      <video autoplay loop muted height="auto" width="100%">
+                        <source src="assets/vids/jp_animation_safe-file.mp4">
+                        Your Browser does not support the video tag.
+                      </video>
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>001</h4>
+                      <h3>Japan street scene</h3>
+                      <p>Simple animation of a typical street in Japan</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4" id="rowElement">
+                    <a href="assets/vids/mars-animation.mp4" title="" class="black-image-project-hover">
+                      <video autoplay loop muted height="auto" width="100%">
+                        <source src="assets/vids/mars-animation.mp4">
+                        Your Browser does not support the video tag.
+                      </video>
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>002</h4>
+                      <h3>Olympus Mons Space Station</h3>
+                      <p>Another simple animation, this time a scene inspired by classical sci-fi novels</p>
+                    </div>
+                  </div>                    
+                </div>
+                <!--/row-->
+            </div>
+            <!--/item-->
+                <div class="item">
+                <div class="row"> 
+                  <div class="col-sm-4" id="rowElement">
+                    <a href="./assets/images/my-stuff/Designs/can_shirtdesign.jpg" title="" class="black-image-project-hover">
+                      <img src="./assets/images/my-stuff/Designs/can-design.JPG" alt="" class="img-responsive" height="20%" width="auto">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>003</h4>
+                      <h3>Shirtdesign</h3>
+                      <p>Shirt design of a drinking can with Japan-inspired design elements</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4" id="rowElement">
+                    <a href="./assets/images/my-stuff/Designs/plakat_fukuoka_text.jpg" title="" class="black-image-project-hover">
+                      <img src="./assets/images/my-stuff/Designs/fukuoka-plakat.JPG" alt="" class="img-responsive">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>004</h4>
+                      <h3>Fukuoka Travel Ad</h3>
+                      <p>Travel advertisement in form of a poster for Fukuoka, Japan</p>
+                    </div>
+                  </div>
+                </div> 
+                <!--/row-->
+              </div>
+            </div>
+            
+            <!--/item-->
+        </div>
+        <!--/carousel-inner--> 
+        <a class="left carousel-control" id="hiddenOnMobile" href="#myCarousel3" data-slide="prev">‹</a>
+
+        <a class="right carousel-control" id="hiddenOnMobile" href="#myCarousel3" data-slide="next">›</a>
+     </div>
+
+
+
+    <!--/myCarousel-->
+    </div>
+    
 
     </div>
   </div>
@@ -171,7 +360,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+        <p>© Leon Gobbert | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
       </div>
     </div>
   </div>
